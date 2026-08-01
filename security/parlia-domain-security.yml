@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: parlia.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 18 03:36:56 2026 GMT
+  hsts: false
+domains:
+- domain: parlia.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: true
+  dmarc_policy: none

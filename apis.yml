@@ -1,7 +1,25 @@
 aid: parlia
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/parlia.png
 name: Parlia
-description: Parlia is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Parlia is the "encyclopedia of opinion," a London-based collaborative content platform founded by
+  Turi Munthe and J. Paul Neeley that maps the world's arguments and opinions the way Wikipedia maps
+  facts. Launched in January 2020 from Somerset House Exchange, it lets a community document, compare,
+  and debate perspectives across politics, technology, and culture in calm, descriptive language, and
+  publishes the "On Opinion with Turi Munthe" podcast. Parlia is a consumer-facing web product; the
+  enrichment pass found no public developer API, SDKs, or OpenAPI surface. It is tracked here as a
+  Bloomberg Beta portfolio company.
 url: https://raw.githubusercontent.com/api-evangelist/parlia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Opinion
+- Content
+- Media
+- Debate
+- Knowledge Base
+- Civic Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/parlia-domain-security.yml
 - type: Website
   url: https://parlia.com/
+- type: About
+  url: https://www.parlia.com/about
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
